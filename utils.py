@@ -1,5 +1,8 @@
 # utils.py
 
+from playwright.async_api import Page
+import logging
+
 from urllib.parse import urljoin, urlparse
 from config import ALL_GROUPS
 
@@ -28,3 +31,36 @@ def matches_keywords(value: str) -> bool:
         for group in ALL_GROUPS
         for keyword in group
     )
+
+
+async def extract_links(page: Page, selector: str, validate_keywords: list):
+    texts, urls = [], []
+    seen = set()
+    links = page.locator(f"{selector} a")
+
+    for i in range(await links.count()):
+        try:
+            text = (await links.nth(i).inner_text()).strip().lower()
+            href = (await links.nth(i).get_attribute("href") or "").strip().lower()
+
+            if not is_valid_link(href) or href in seen:
+                continue
+            seen.add(href)
+
+            matched_keyword = next((k for k in validate_keywords if k in href or k in text), None)
+            if not matched_keyword:
+                continue
+
+            if selector == "body":
+                path_parts = [p for p in urlparse(href).path.rstrip("/").split("/") if p]
+                if path_parts and matched_keyword in path_parts[-1] and len(path_parts) == 1:
+                    continue
+                return [text], [href]
+
+            texts.append(text)
+            urls.append(href)
+
+        except Exception as e:
+            logging.warning(f"Skipping link {i}: {e}")
+
+    return texts, urls
