@@ -33,26 +33,36 @@ def matches_keywords(value: str) -> bool:
     )
 
 
+#TODO better link filter
 async def extract_links(page: Page, selector: str, validate_keywords: list):
+    """Extracts links based on keyword matching from page's css selector"""
     texts, urls = [], []
     seen = set()
     links = page.locator(f"{selector} a")
 
+    # go through ith link
     for i in range(await links.count()):
         try:
             text = (await links.nth(i).inner_text()).strip().lower()
             href = (await links.nth(i).get_attribute("href") or "").strip().lower()
 
+            # validate the link
             if not is_valid_link(href) or href in seen:
                 continue
+
+            # add on seen to not override same link
             seen.add(href)
 
+            # match the link with keyword
             matched_keyword = next((k for k in validate_keywords if k in href or k in text), None)
             if not matched_keyword:
                 continue
-
+            
+            # if the body link must be full.
             if selector == "body":
                 path_parts = [p for p in urlparse(href).path.rstrip("/").split("/") if p]
+
+                # take links with more than one /
                 if path_parts and matched_keyword in path_parts[-1] and len(path_parts) == 1:
                     continue
                 return [text], [href]
