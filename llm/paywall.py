@@ -16,6 +16,8 @@ client = OpenAI(
 class PaywallInfo(BaseModel):
     has_paywall: bool = Field(...,
         description="True if content is blocked or restricted behind login/subscription.")
+    login_paywall = Field(...,
+        description=""),
     has_login: bool = Field(...,
         description="True if login/signup in header.")
     popup_login: bool = Field(...,
@@ -119,6 +121,14 @@ TERMS and PRIVACY: \n
     return response.choices[0].message.parsed
 
 
+def safe_join(value):
+    if isinstance(value, list):
+        return " ".join(str(v) for v in value if v)
+    if isinstance(value, str):
+        return value
+    return ""
+
+
 def llm_evaluation(scrape_results: dict):
     results = {}
 
@@ -131,10 +141,11 @@ def llm_evaluation(scrape_results: dict):
             header = data.get("header",{})
             content_pages = data.get("content_page", [])
 
-            # 🔹 Concatenate all footer page bodies
-            header_text = "\n\n".join(
-                [" ".join(header.get("top_bar", []))," ".join(header.get("header", [])),
-                " ".join(header.get("texts", []))," ".join(header.get("links", [])),])
+            # Concatenate all footer page bodies
+            header_text = "\n\n".join([
+                safe_join(header.get("top_bar")),safe_join(header.get("header")),
+                safe_join(header.get("texts")),safe_join(header.get("links")),
+            ])
 
             combined_text = "\n\n".join(
                 page.get("body", "") for page in footer_pages if page.get("body"))
@@ -143,16 +154,14 @@ def llm_evaluation(scrape_results: dict):
                 page.get("body", "") for page in content_pages if page.get("body"))
 
 
-            # 🔹 Truncate (important for speed + cost)
+            # Truncate (important for speed + cost)
             header_text = header_text.strip()[:8000]
-            body_text = body_text.strip()[:12000]
-            combined_text = combined_text[:12000]
+            body_text = body_text.strip()[100:12000]
+            combined_text = combined_text[100:12000]
 
-            # 🔹 Send same text as both terms + privacy, and header + content info
+            # Send same text as both terms + privacy, and header + content info
             legal_info = check_legal_basic(terms_privacy_text=combined_text)
-
-            paywall_info = check_paywall(
-                header_context=header_text, body_context=body_text)
+            paywall_info = check_paywall(header_context=header_text, body_context=body_text)
 
             results[url] = {
                 "legal_terms": {
@@ -160,7 +169,7 @@ def llm_evaluation(scrape_results: dict):
                     "allows_scraping": legal_info.allows_scraping,"reasoning": legal_info.reasoning,
                 },
                 "paywall":{
-                    "has_paywall": paywall_info.has_paywall,"has_login": paywall_info.has_login,
+                    "has_login": paywall_info.has_login,"has_paywall": paywall_info.has_paywall,
                     "confidence": paywall_info.confidence,"signals": paywall_info.signals,
                     "reasoning": paywall_info.reasoning,"popup_login": paywall_info.popup_login
                 }
