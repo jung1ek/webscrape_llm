@@ -1,5 +1,6 @@
 # config.py, css selectors and keyword mathing strings
 
+#TODO dynamic css generator
 PRIVACY_KEYWORDS = (
     "privacy", "privacybeleid", "cookie", "gegevensbescherming"
 )
