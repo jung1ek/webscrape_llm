@@ -10,8 +10,7 @@ async def scrape_header(page: Page) -> dict:
     """Extract header and authentication-related links."""
     selectors_used = []
 
-    topbar_selector = None
-    header_selector = None
+    topbar_selector, header_selector = None, None
     
     top_bar = None
     
@@ -26,7 +25,7 @@ async def scrape_header(page: Page) -> dict:
             topbar_selector = selector
             selectors_used.append(selector)
             break
-        
+
     header = None
 
     # header link's text and href
@@ -56,9 +55,6 @@ async def scrape_header(page: Page) -> dict:
 
     # return the extracted information
     return {
-        "selectors": selectors_used,
-        "top_bar": top_bar,
-        "header": header,
-        "texts": header_text+topbar_text,
-        "links": header_link+topbar_link,
+        "selectors": selectors_used,"top_bar": top_bar,"header": header,
+        "texts": header_text+topbar_text,"links": header_link+topbar_link,
     }
