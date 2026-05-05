@@ -1,0 +1,23 @@
+{
+  "https://www.cobouw.nl": {
+    "access": {
+      "is_public": false,
+      "wall_type": "subscription",
+      "confidence": "high",
+      "signals": [
+        "Krijg onbeperkt toegang tot alle artikelen",
+        "Lees 1 maand gratis",
+        "Log in om dit artikel te lezen",
+        "abonneren"
+      ],
+      "reasoning": "The website explicitly displays paywall messaging inviting users to 'subscribe' or 'get unlimited access' while blocking the actual content of the articles with login and subscription prompts.",
+      "subscription_paywall": true
+    },
+    "legal_terms": {
+      "has_terms": true,
+      "has_privacy": true,
+      "allows_scraping": false,
+      "reasoning": "The website provides explicit links to Terms and Conditions documents and a comprehensive Privacy Policy. There is no mention of permissions for web scraping, crawling, or automated access, so it is prohibited by default."
+    }
+  }
+}

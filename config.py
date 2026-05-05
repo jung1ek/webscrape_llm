@@ -45,13 +45,13 @@ ARTICLE_KEYWORDS = (
 )
 
 NEWS_KEYWORDS = (
-    # English
-    "news", "latest", "update", "press", "announcement",
-    "headline", "breaking",
-
     # Dutch
     "nieuws", "laatste", "update", "pers", "aankondiging",
     "kop", "breaking"
+    
+    # English
+    "news", "latest", "update", "press", "announcement",
+    "headline", "breaking",
 )
 
 PROJECT_KEYWORDS = (
@@ -65,7 +65,7 @@ PROJECT_KEYWORDS = (
 )
 
 PAYWALL_KEYWORDS = (
-    "sign", "log", "auth", "try"
+    "sign", "log", "auth", "try", "zoeken", "search"
 )
 
 ALL_CONTENT_GROUPS = [
