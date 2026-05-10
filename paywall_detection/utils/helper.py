@@ -9,6 +9,7 @@ from urllib.parse import urljoin, urlparse
 
 from llm.prompt import ELEMENT_EXTRACTOR_JS
 
+# Helpers function for manual fileter
 PRIVACY_KEYWORDS = (
     "privacy", "privacybeleid", "cookie", "gegevensbescherming"
 )

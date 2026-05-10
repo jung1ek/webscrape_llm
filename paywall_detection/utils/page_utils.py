@@ -12,10 +12,11 @@ from utils.schema import CSSSelectorFilter
 
 logging.basicConfig(level=logging.INFO)
 
-async def fetch_html(url:str, timeout: int =15)-> str:
+async def fetch_html(url:str, with_cookie: bool = False, timeout: int =15)-> str:
+    """Fetch one URL, clean body html"""
     try:
         logging.info(f"Goto url: {url}")
-        page = await get_page()
+        page = await get_page(with_cookie=with_cookie)
         await page.goto(url,wait_until="domcontentloaded",timeout=timeout*1000)
         html = await page.locator("body").inner_html()
         return html
@@ -25,6 +26,7 @@ async def fetch_html(url:str, timeout: int =15)-> str:
     
 
 async def extract_all_elements(page: Page) -> List[str]:
+    """Extract all elements on the page."""
     try:
         elements = await get_elements(page)
         logging.info(f"Found {len(elements)} elements.")
@@ -33,7 +35,9 @@ async def extract_all_elements(page: Page) -> List[str]:
         logging.error(f"Error while Extracting elements: {e}")
         raise
 
+
 async def manual_filter_elements(elements, strict=False)-> List[str]:
+    """Fallback: rule-based element classification (no LLM)."""
     if elements:
         filterd_els = [el for el in elements if is_specific("",el)]
         if strict:
@@ -85,6 +89,7 @@ async def manual_filter_selectors(page,elements: List[str],top=0.10,bottom=0.90)
 
 
 async def extract_content_by_selectors(html,selectors,excluded=[]):
+    """Extract content by selectors."""
 
     content_filter = PruningContentFilter(threshold=0.45,
             threshold_type="dynamic",min_word_threshold=5,
@@ -105,8 +110,7 @@ async def extract_content_by_selectors(html,selectors,excluded=[]):
 
         # strip noise
         excluded_tags=["script","style","noscript",
-            "iframe","svg","img","video","audio",
-            "form","button",
+            "iframe","svg","img","video","audio","form",
         ],
         remove_forms=True,
         markdown_generator=DefaultMarkdownGenerator(
@@ -131,12 +135,10 @@ async def extract_content_by_selectors(html,selectors,excluded=[]):
         return ""
 
 
-async def extract_links_from_selectors(
-    html,
-    selectors,
-    base_url,
-    excluded=None
-):
+async def extract_links_from_selectors(html,
+    selectors,excluded=None):
+    """Extract links by selectors."""
+
     excluded = excluded or []
 
     content_filter = PruningContentFilter(
@@ -166,9 +168,7 @@ async def extract_links_from_selectors(
         excluded_tags=[
             "script", "style", "noscript",
             "iframe", "svg", "img",
-            "video", "audio",
-            "form", "button",
-        ],
+            "video", "audio","form"],
 
         remove_forms=True,
 
@@ -185,31 +185,22 @@ async def extract_links_from_selectors(
     try:
         async with AsyncWebCrawler() as crawler:
             result = await crawler.arun(
-                url=f"raw:{html}",
-                config=config,
-            )
+                url=f"raw:{html}",config=config,)
 
-        hrefs = []
-        texts = []
-        seen = set()
+        hrefs,texts,seen = [], [],set()
 
         links = result.links.get("internal", [])
-
+        
         for link in links:
 
             href = link.get("href", "")
             text = (link.get("text") or "").strip()
 
-            # # normalize relative -> absolute
-            # href = normalize_url(base_url, raw_href)
-
             # validate
-            if not is_valid_link(href):
-                continue
+            if not is_valid_link(href): continue
 
             # dedupe
-            if href in seen:
-                continue
+            if href in seen: continue
 
             seen.add(href)
 
@@ -219,93 +210,4 @@ async def extract_links_from_selectors(
         return hrefs, texts
 
     except Exception as e:
-        raise RuntimeError(f"Error extracting links: {e}")
-    
-
-
-class ElementExtraction():
-
-    def __init__(self,url,elements):
-        self.url = url
-        self.elements = elements
-        self.header = None
-        self.footer = None
-
-        self.header_sels = None
-        self.footer_sels = None
-
-    def __repr__(self):
-        return f"URL: {self.url} >> H: {self.header_sels} || F: {self.footer_sels}"
-
-
-    @classmethod
-    async def extract_manual_filter_selectors(cls,page: Page, url: str,top: float=0.05, bottom: float=0.95):
-        try:
-            logging.info(f"Goto url: {url}")
-            await page.goto(url,wait_until="domcontentloaded")
-            doc_height = await page.evaluate("document.documentElement.scrollHeight")
-            header_cut = doc_height * top
-            footer_cut = doc_height * bottom
-
-            elements = await get_elements(page)
-            logging.info(f"Found {len(elements)} elements.")
-            
-            # header: semantic first, position fallback 
-            header_els = [el for el in elements if is_header_like(el)]
-            if not header_els:
-                header_els = [el for el in elements if el["mid_y"] < header_cut]
-
-            header_set = {id(el) for el in header_els}
-
-            # everything from 90% to bottom, regardless of how big the middle is
-            footer_els = [el for el in elements if is_footer_like(el)]
-            if not footer_els:
-                footer_els = [el for el in elements if id(el) not in header_set
-                    # and el["top"] >= footer_cut     # top edge, not mid_y
-                    and el["mid_y"] >= footer_cut ]
-
-            logging.info(f"Header elements: {len(header_els)}.")
-            logging.info(f"Footer elements: {len(footer_els)}.")
-
-            footer_selectors = list({build_selector(el) for el in footer_els \
-                                    if is_specific(build_selector(el),el)})
-            header_selectors   = list({build_selector(el) for el in header_els \
-                                    if is_specific(build_selector(el),el)})
-            logging.info(f"Header Selectors: {len(header_selectors)}.")
-            logging.info(f"Footer Selectors: {len(footer_selectors)}.")
-
-            out = cls(url,elements)
-
-            out.header = header_els
-            out.footer = footer_els
-
-            out.header_sels = header_selectors
-            out.footer_sels = footer_selectors
-            return out
-        except Exception as e:
-            logging.error(f"Error while Extracting elements: {e}")
-            raise
-    
-    @classmethod
-    async def extract_elements(cls,page: Page, url: str):
-        try:
-            logging.info(f"Goto url: {url}")
-            await page.goto(url,wait_until="domcontentloaded")
-
-            elements = await get_elements(page)
-            logging.info(f"Found {len(elements)} elements.")
-            return cls(url,elements)
-        except Exception as e:
-            logging.error(f"Error while Extracting elements: {e}")
-            raise
-    
-    def manual_filter_elements(self,strict: bool=False):
-        if self.elements:
-            filterd_els = [el for el in self.elements if is_specific("",el)]
-            if strict:
-                filterd_els = [el for el in filterd_els if is_header_like(el) or is_footer_like(el)]
-            logging.info(f"Filtered {len(self.elements)} elements >> {len(filterd_els)} elements.")
-            self.elements = filterd_els
-        else:
-            logging.error(f"Eelements not extracted")
-        
+        logging.error(f"Error extracting links: {e}")

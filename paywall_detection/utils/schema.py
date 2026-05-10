@@ -5,19 +5,19 @@ from typing import List, Optional, Literal
 
 
 class FooterLinkSelector(BaseModel):
-    privacy_links: List[str] = Field(
-        default_factory=list,
-        description="Links related to privacy, cookies, and data protection"
+    privacy_links: str = Field(
+        default_factory=str,
+        description="Link related to privacy, cookies, and data protection"
     )
 
-    terms_links: List[str] = Field(
-        default_factory=list,
-        description="Links related to terms, conditions, and service policies"
+    terms_links: str = Field(
+        default_factory=str,
+        description="Link related to terms, conditions, and service policies"
     )
 
-    disclaimer_links: List[str] = Field(
-        default_factory=list,
-        description="Links related to disclaimers or legal liability"
+    disclaimer_links: str = Field(
+        default_factory=str,
+        description="Link related to disclaimers or legal liability"
     )
 
 
@@ -54,18 +54,13 @@ class CSSSelectorFilter(BaseModel):
         description="Selectors targeting footer/legal/navigation bottom areas"
     )
 
-    # body_selectors: List[str] = Field(
-    #     default_factory=list,
-    #     description="Selectors targeting main content/article areas"
-    # )
-
     excluded_selectors: List[str] = Field(
         default_factory=list,
         description="Selectors that should be removed (ads, popups, etc.)"
     )
 
 
-# ── Legal / scraping policy ───────────────────────────────────────────────────
+# ── Legal / scraping policy  and login checks
 class HeaderLoginCheck(BaseModel):
     has_login: bool = Field(..., description="True if a login/sign-in button or link is present in the header.")
     has_signup: bool = Field(..., description="True if a register/sign-up/create account button is present.")
