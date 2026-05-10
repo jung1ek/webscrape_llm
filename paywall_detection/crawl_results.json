@@ -1,0 +1,469 @@
+[
+  {
+    "timestamp": "2026-05-09T04:28:35.237986",
+    "url": "https://www.cobouw.nl",
+    "selectors": {
+      "header": [
+        ".app-menu-wrapper"
+      ],
+      "footer": [
+        "footer"
+      ],
+      "excluded": [
+        ".ad-slot-top",
+        ".overlay_bottom_right",
+        ".column.column.ad"
+      ]
+    },
+    "footer_links": {},
+    "content_links": {},
+    "pages": []
+  },
+  {
+    "timestamp": "2026-05-09T04:28:41.581411",
+    "url": "https://www.belgiumtenders.com",
+    "selectors": {
+      "header": [
+        ".head-top",
+        ".header-area"
+      ],
+      "footer": [
+        ".footer-area",
+        ".copyright-area"
+      ],
+      "excluded": [
+        ".banner-area",
+        ".tender-area",
+        ".search-area",
+        ".zimb-hero-area",
+        ".click-area"
+      ]
+    },
+    "footer_links": {},
+    "content_links": {},
+    "pages": []
+  },
+  {
+    "timestamp": "2026-05-10T08:05:16.558214+00:00",
+    "url": "https://www.cobouw.nl",
+    "selectors": {
+      "header_selectors": [
+        ".app-menu-wrapper"
+      ],
+      "footer_selectors": [
+        "footer.container"
+      ],
+      "excluded_selectors": [
+        ".ad-slot-top",
+        ".overlay_bottom_right",
+        ".column.column.ad"
+      ]
+    },
+    "footer_links": {
+      "privacy_links": "https://vmnmedia.nl/privacy-cookie-statement",
+      "terms_links": "https://vmnmedia.nl/algemene-voorwaarden",
+      "disclaimer_links": ""
+    },
+    "content_links": {
+      "article_links": [
+        "https://www.cobouw.nl/336463/ondanks-netcongestie-collectieve-warmtepomp-is-oplossing-maar-we-willen-geen-luchtkastelen-bouwen",
+        "https://www.cobouw.nl/336460/niemand-weet-hoe-groot-de-spuitvrije-zones-mogen-zijn-wel-vertragen-ze-nieuwbouw",
+        "https://www.cobouw.nl/336361/keerwanden-bieden-ruimte-voor-zwaluw-en-vleermuis-bij-vernieuwde-wal-masque",
+        "https://www.cobouw.nl/336448/grondige-renovatie-moet-publieke-rol-monumentaal-gouds-stadhuis-terugbrengen",
+        "https://www.cobouw.nl/336420/haagse-gebouwen-wisselen-stroom-uit-een-energiehub-opzetten-vergt-polderen-in-optima-forma",
+        "https://www.cobouw.nl/336383/pioniersjaren-zijn-voorbij-batterijopslag-is-nu-heus-verdienmodel",
+        "https://www.cobouw.nl/336411/bouwrechtopleiding-grotius-verbindt-verdieping-met-praktijk",
+        "https://www.cobouw.nl/336210/duurzaamheid-is-een-ketenbeslissing",
+        "https://www.cobouw.nl/336308/stack-up-pallet-zorgt-voor-70-minder-loopbewegingen",
+        "https://www.cobouw.nl/336398/de-flexibele-schil-die-bouwers-ooit-behoedde-voor-te-grote-risicos-is-nu-juist-een-risico",
+        "https://www.cobouw.nl/336338/grote-bouwers-beschouwen-personeelstekort-als-het-grootste-risico",
+        "https://www.cobouw.nl/336235/bijna-alle-bouwmaterialen-zijn-duurder-geworden-door-de-oorlog-met-iran",
+        "https://www.cobouw.nl/335986/de-prijs-van-grond-is-sneller-gestegen-dan-die-van-bouwmaterialen",
+        "https://www.cobouw.nl/336351/vervanging-op-lange-baan-zwaar-verkeer-moet-weg-van-rand-op-rotterdamse-giessenbrug",
+        "https://www.cobouw.nl/336326/de-onzichtbare-snelweg-klare-lijn-van-architect-quist-laat-groene-boog-opgaan-in-landschap",
+        "https://www.cobouw.nl/336315/verlaging-geluidsplafonds-moet-woningbouw-langs-het-spoor-impuls-geven",
+        "https://www.cobouw.nl/336447/zonder-regie-geen-ruimtelijk-vernuft",
+        "https://www.cobouw.nl/336331/opinie-industrialisatie-is-geen-beleidskeuze-het-is-onvermijdelijk",
+        "https://www.cobouw.nl/336214/opinie-wie-co2-reductie-in-de-bouw-wil-versnellen-moet-betalen-voor-bewezen-prestatie",
+        "https://www.cobouw.nl/336219/opinie-we-koken-een-kikker",
+        "https://www.cobouw.nl/335464/tno-innovatie-update-meer-doen-met-minder-mensen-door-inzet-ai-en-robotisering",
+        "https://www.cobouw.nl/336170/bouwplaatsbeveiliging-voorkomt-vertraging-in-het-bouwproces",
+        "https://www.cobouw.nl/336148/energieprijsrisico-bij-woningbouw-wie-betaalt-de-rekening",
+        "https://www.cobouw.nl/336072/hoe-beroepsvereniging-inkoopprofessionals-helpt-in-complexe-tijden",
+        "https://www.cobouw.nl/336036/van-constructie-naar-sierelement-maatwerk-in-beton-wint-terrein",
+        "https://www.cobouw.nl/335639/systeemdenken-in-de-woning-ventilatie"
+      ],
+      "news_links": [],
+      "project_links": [],
+      "other_links": []
+    },
+    "pages": [],
+    "header": "[](/)\n  * [Start gratis proefperiode](/abonneren/cobouw-online-jaar-1mnd-gratis?ga_list_id=top_bar)\n  * [Inloggen](https://www.cobouw.nl/auth/redirect?path=%2F&lang=nl)\n\n\n  * [Nieuws](/nieuws)\n  * [Forecast](/forecast)\n  * [Aanbesteden](/aanbesteden)\n  * [Duurzaamheid](/duurzaamheid)\n  * [Infra](/infra)\n  * [Innovatie](/innovatie)\n  * [Marktontwikkeling](/marktontwikkeling)\n  * [Cobouw50](/cobouw50)\n  * [Cobouw Pro](/pro)\n\n\n[](/zoeken)\n",
+    "footer": "  * [Nieuwsbrieven](/nieuwsbrieven)\n\n\n  * [Over Cobouw](/over-cobouw)\n  * [Klantenservice](/klantenservice)\n  * [Contact](/contact)\n  * [Vacatures](/vacatures)\n  * [Adverteren](https://vmnmedia.nl/merken/cobouw)\n\n\n###  Thema's\n  * [Aanbesteden](/aanbesteden)\n  * [Bouwkwaliteit](/bouwkwaliteit)\n  * [Duurzaamheid](/duurzaamheid)\n  * [Infra](/infra)\n  * [Innovatie](/innovatie)\n  * [Marktontwikkeling](/marktontwikkeling)\n\n\n### [Nieuws](/nieuws)\n\n\n###  Extra\n  * [Podcasts](/podcast)\n  * [Cobouw50](/cobouw50)\n  * [Cobouw Live](/live)\n  * [Bouwvrouwen](/bouwvrouw-van-het-jaar)\n  * [Events](/events)\n\n\n###  Bekijk ook\n  * [Bouwberichten](https://bouwberichten.nl)\n  * [Bouwmachines.nl](https://www.bouwmachines.nl)\n  * [BouwMonitor](https://bouwvastgoedmonitor.nl/)\n  * [Bouwwetten.nl](https://www.bouwwetten.nl/)\n  * [Gawalo.nl](https://www.gawalo.nl/)\n  * [Installatie Journaal](https://www.installatiejournaal.nl/)\n  * [Vakblad Warmtepompen](https://www.vakbladwarmtepompen.nl/)\n\n\n###  Volg Cobouw\n  * [Facebook](https://www.facebook.com/Cobouw)\n  * [LinkedIn](https://www.linkedin.com/showcase/cobouw/posts/?feedView=all)\n  * [x](https://x.com/cobouwnl)\n  * [Instagram](https://www.instagram.com/cobouw/)\n\n\nCobouw is onderdeel van VMN media. Lees in [ons manifest](https://vmnmedia.nl/werken-bij/manifest-vmn) waar VMN media voor staat. Op gebruik van deze site zijn de volgende regelingen van toepassing: [Algemene Voorwaarden](https://vmnmedia.nl/algemene-voorwaarden) en [Privacy en Cookie beleid](https://vmnmedia.nl/privacy-cookie-statement) | [Privacy instellingen](javascript:Didomi.preferences.show\\(\\))\n  * [](https://www.facebook.com/cobouw)\n  * [](https://x.com/cobouwnl)\n  * [](https://www.linkedin.com/showcase/cobouw/posts/?feedView=all)\n\n\n",
+    "header_login": {
+      "has_login": true,
+      "has_signup": false,
+      "has_subscribe": true,
+      "login_text": [
+        "Inloggen"
+      ]
+    },
+    "paywall_summary": {
+      "is_public": false,
+      "confidence": "high",
+      "signals": [
+        "Log in om dit artikel te lezen",
+        "Krijg onbeperkt toegang tot alle artikelen",
+        "Lees 1 maand gratis"
+      ],
+      "reasoning": "The page explicitly prompts the user to log in or subscribe to read the article, and the content is truncated.",
+      "wall_type": "subscription",
+      "wall_confidence": "high",
+      "wall_signals": [
+        "Neem een proefabonnement",
+        "Lees 1 maand gratis",
+        "/abonneren/"
+      ],
+      "wall_reasoning": "The content explicitly prompts the user to take out a subscription (proefabonnement) to continue reading, and the URL structure points directly to a subscription/payment flow rather than a simple registration page."
+    },
+    "legal": {
+      "has_terms": true,
+      "has_privacy": true,
+      "allows_scraping": false
+    }
+  },
+  {
+    "timestamp": "2026-05-10T08:07:37.259035+00:00",
+    "url": "https://www.belgiumtenders.com",
+    "selectors": {
+      "header_selectors": [
+        ".head-top",
+        ".header-area"
+      ],
+      "footer_selectors": [
+        ".footer-area",
+        ".copyright-area"
+      ],
+      "excluded_selectors": [
+        ".banner-area",
+        ".tender-area",
+        ".search-area",
+        ".zimb-hero-area",
+        ".click-area"
+      ]
+    },
+    "footer_links": {
+      "privacy_links": "https://www.belgiumtenders.com/privacy-policy.php",
+      "terms_links": "https://www.belgiumtenders.com/terms-condition.php",
+      "disclaimer_links": ""
+    },
+    "content_links": {
+      "article_links": [],
+      "news_links": [],
+      "project_links": [],
+      "other_links": [
+        "https://www.belgiumtenders.com/search-tender.php",
+        "https://www.belgiumtenders.com/construction-and-real-estate-tenders.php",
+        "https://www.belgiumtenders.com/printing-and-publishing-tenders.php",
+        "https://www.belgiumtenders.com/energy-and-related-services-tenders.php",
+        "https://www.belgiumtenders.com/computer-and-related-services-tenders.php",
+        "https://www.belgiumtenders.com/finance-and-related-services-tenders.php",
+        "https://www.belgiumtenders.com/materials-and-products-tenders.php",
+        "https://www.belgiumtenders.com/defence-and-security-tenders.php",
+        "https://www.belgiumtenders.com/agriculture-and-food-tenders.php",
+        "https://www.belgiumtenders.com/environment-and-sanitation-tenders.php",
+        "https://www.belgiumtenders.com/research-and-development-tenders.php",
+        "https://www.belgiumtenders.com/sectors.php",
+        "https://www.belgiumtenders.com/authority/ag-digipolis-antwerpen-tenders-46f/",
+        "https://www.belgiumtenders.com/authority/agency-for-nature-and-forest-tenders-467/",
+        "https://www.belgiumtenders.com/authority/agentschap-facilitair-bedrijf-tenders-47a/",
+        "https://www.belgiumtenders.com/authority/aquafin-nv-tenders-459/",
+        "https://www.belgiumtenders.com/authority/",
+        "https://www.belgiumtenders.com/tender/asbestos-removal-8671e0e.php",
+        "https://www.belgiumtenders.com/tender/multi-year-contract-price-schedule-general-practitioner-defense-866e856.php",
+        "https://www.belgiumtenders.com/tender/multi-year-contract-price-schedule-dentist-la-d-fense--866e82c.php",
+        "https://www.belgiumtenders.com/tender/multi-year-contract-price-schedule-doctor-specializing-neurology-defense-866e7eb.php",
+        "https://www.belgiumtenders.com/tender/restoration-chapel-and-theater-hall-flor-van-reeth-866e77f.php",
+        "https://www.belgiumtenders.com/tender/supply-complete-helium-recovery-system-866e740.php",
+        "https://www.belgiumtenders.com/tender/framework-agreement-cleaning-church-buildings-territory-city-aalst-period-3-years-866e6c1.php",
+        "https://www.belgiumtenders.com/tender/delivery-and-provision-all-in-lease-nitric-oxide-therapy-device-use-neonatal-intensive-care-nicu-866e62d.php",
+        "https://www.belgiumtenders.com/tender/framework-agreement-supply-and-installation-air-conditioning-installations-866e5ae.php",
+        "https://www.belgiumtenders.com/tender/restoration-work-tower-and-front-st-gertrudis-church-wetteren-866e47c.php",
+        "https://www.belgiumtenders.com/technology-and-equipment-tenders.php",
+        "https://www.belgiumtenders.com/it-softwares-tenders.php"
+      ]
+    },
+    "pages": [],
+    "header": "  * [__Register](https://www.belgiumtenders.com/register.php)\n  * [__Login](https://www.belgiumtenders.com/login.php)\n  * [__Subscribe](https://www.belgiumtenders.com/plans.php)\n  * [__Contact Us](https://www.belgiumtenders.com/contact.php)\n  * 🌍 English\n\n\n[ ](https://www.belgiumtenders.com/)\n  * [Home](https://www.belgiumtenders.com/)\n  * [Tenders](https://www.belgiumtenders.com/tenders.php)\n  * [Contract Award](https://www.belgiumtenders.com/contract-awards/)\n  * [Advance Search](https://www.belgiumtenders.com/search-tender.php)\n\n\n",
+    "footer": "Home\n  * [All Tenders](https://www.belgiumtenders.com/tenders.php)\n  * [All Contract Awards](https://www.belgiumtenders.com/contract-awards/)\n  * [Advance Search](https://www.belgiumtenders.com/search-tender.php)\n  * [Blogs](https://www.belgiumtenders.com/blogs/)\n  * [Tenders Posted by Purchasers](https://www.belgiumtenders.com/advertise-tenders.php)\n  * [Belgium Public Procurement](https://www.belgiumtenders.com/public-procurement.php)\n  * [Publish Tenders](https://www.belgiumtenders.com/publish-tender.php)\n  * [Partner Program](https://www.belgiumtenders.com/partner-program.php)\n  * [Sitemap](https://www.belgiumtenders.com/sitemap.php)\n\n\nImportant Links\n  * [Login](https://www.belgiumtenders.com/login.php)\n  * [Register](https://www.belgiumtenders.com/register.php)\n  * [View Plans](https://www.belgiumtenders.com/plans.php)\n  * [About Us](https://www.belgiumtenders.com/about-us.php)\n  * [Contact Us](https://www.belgiumtenders.com/contact.php)\n  * [Services](https://www.belgiumtenders.com/services.php)\n  * [FAQ](https://www.belgiumtenders.com/faq.php)\n  * [Terms & Conditions](https://www.belgiumtenders.com/terms-condition.php)\n  * [Privacy Policy](https://www.belgiumtenders.com/privacy-policy.php)\n\n\nTenders By\n  * [Authorities](https://www.belgiumtenders.com/authority/)\n  * [Sectors](https://www.belgiumtenders.com/sectors.php)\n  * [Products and Services](https://www.belgiumtenders.com/products-services/)\n  * [Keywords](https://www.belgiumtenders.com/keywords/)\n\n\n__info@belgiumtenders.com\n  \n\nCopyright © 2014-2026  [belgiumtenders.com.](https://www.belgiumtenders.com/) All Rights Reserved.\n",
+    "header_login": {
+      "has_login": true,
+      "has_signup": true,
+      "has_subscribe": true,
+      "login_text": [
+        "Login",
+        "Register",
+        "Subscribe"
+      ]
+    },
+    "paywall_summary": {
+      "is_public": false,
+      "confidence": "high",
+      "signals": [
+        "Register For An Account",
+        "Create a Free Account to view all Tenders of Belgium",
+        "Register For Free"
+      ],
+      "reasoning": "The page explicitly states that users must create an account to view all tenders, and the content list is empty or restricted until registration.",
+      "wall_type": "login",
+      "wall_confidence": "high",
+      "wall_signals": [
+        "Create a Free Account to view all Tenders",
+        "Register For Free",
+        "Register Here"
+      ],
+      "wall_reasoning": "The website explicitly states that users need to 'Create a Free Account' to view the content, and provides links to register for free without mentioning any paid subscription plans or pricing tables."
+    },
+    "legal": {
+      "has_terms": false,
+      "has_privacy": false,
+      "allows_scraping": true
+    }
+  },
+  {
+    "timestamp": "2026-05-10T08:08:51.449380+00:00",
+    "url": "https://www.vlaanderen.be/",
+    "selectors": {
+      "header_selectors": [
+        "#wp-pt-global-header"
+      ],
+      "footer_selectors": [
+        ".vl-region.vl-region--overlap"
+      ],
+      "excluded_selectors": [
+        "#__nuxt",
+        "#__layout",
+        ".vl-page",
+        ".wp-bp-home",
+        ".wp-bp-home-header-wrapper",
+        ".wp-bp-home__gov"
+      ]
+    },
+    "footer_links": {
+      "privacy_links": "",
+      "terms_links": "",
+      "disclaimer_links": ""
+    },
+    "content_links": {
+      "article_links": [
+        "https://www.vlaanderen.be/publicaties"
+      ],
+      "news_links": [
+        "https://www.vlaanderen.be/nieuwsberichten/samen-voorbereid-zo-vind-je-tijdens-een-noodsituatie-snel-de-juiste-info",
+        "https://www.vlaanderen.be/inclusie/nieuwsberichten/iedereenoveral-breidt-aanbod-uit-met-publiek-sanitair",
+        "https://www.vlaanderen.be/vlaamse-belastingdienst/het-digitaal-loket-van-de-vlaamse-belastingdienst-steekt-in-een-nieuw-jasje",
+        "https://www.vlaanderen.be/nieuwsberichten/pas-op-voor-fraude-met-valse-e-mails-sms-phishing",
+        "https://www.vlaanderen.be/nieuwsberichten/inschrijvingen-toelatingsexamens-sluiten-op-18-mei",
+        "https://www.vlaanderen.be/nieuwsberichten/vlaams-meldpunt-grensoverschrijdend-gedrag",
+        "https://www.vlaanderen.be/nieuwsberichten"
+      ],
+      "project_links": [],
+      "other_links": [
+        "https://www.vlaanderen.be/bouwen-wonen-en-energie",
+        "https://www.vlaanderen.be/mobiliteit-en-openbare-werken",
+        "https://www.vlaanderen.be/gezin",
+        "https://www.vlaanderen.be/gezondheid-en-welzijn",
+        "https://www.vlaanderen.be/belastingen-en-begroting",
+        "https://www.vlaanderen.be/onderwijs-en-vorming",
+        "https://www.vlaanderen.be/werken",
+        "https://www.vlaanderen.be/economie-en-ondernemen",
+        "https://www.vlaanderen.be/consumentenzaken",
+        "https://www.vlaanderen.be/natuur-milieu-en-klimaat",
+        "https://www.vlaanderen.be/landbouw-en-visserij",
+        "https://www.vlaanderen.be/cultuur-sport-en-vrije-tijd",
+        "https://www.vlaanderen.be/wetenschappelijk-onderzoek",
+        "https://www.vlaanderen.be/uw-overheid/werken-bij-de-vlaamse-overheid",
+        "https://www.vlaanderen.be/uw-overheid",
+        "https://www.vlaanderen.be/uw-overheid/werking-en-structuur-van-de-vlaamse-overheid",
+        "https://www.vlaanderen.be/vlaamse-regering",
+        "https://www.vlaanderen.be/vlaams-parlement",
+        "https://www.vlaanderen.be/werken-voor-vlaanderen"
+      ]
+    },
+    "pages": [],
+    "header": "\n",
+    "footer": "\n",
+    "header_login": {
+      "has_login": false,
+      "has_signup": false,
+      "has_subscribe": false,
+      "login_text": []
+    },
+    "paywall_summary": {
+      "is_public": true,
+      "confidence": "high",
+      "signals": [],
+      "reasoning": "The page is the official government portal for Flanders (vlaanderen.be). It provides public information and services and does not contain any paywall, subscription, or login requirements.",
+      "wall_type": null,
+      "wall_confidence": null,
+      "wall_signals": [],
+      "wall_reasoning": ""
+    },
+    "legal": {
+      "has_terms": true,
+      "has_privacy": true,
+      "allows_scraping": true
+    }
+  },
+  {
+    "timestamp": "2026-05-10T08:09:56.833141+00:00",
+    "url": "https://www.iamexpat.nl/",
+    "selectors": {
+      "header_selectors": [
+        "#modal-container"
+      ],
+      "footer_selectors": [
+        "div.desktop\\:flex.hidden.flex-row.items-center.justify-between.gap-3"
+      ],
+      "excluded_selectors": [
+        "#root-container",
+        "#main-content"
+      ]
+    },
+    "footer_links": {
+      "privacy_links": "",
+      "terms_links": "",
+      "disclaimer_links": ""
+    },
+    "content_links": {
+      "article_links": [
+        "https://www.iamexpat.nl/lifestyle/lifestyle-news/coastal-dunes-south-holland-officially-named-dutch-national-park",
+        "https://www.iamexpat.nl/lifestyle/lifestyle-news/dutch-now-favour-asian-snacks-over-traditional-bitterballen",
+        "https://www.iamexpat.nl/lifestyle/lifestyle-news/amsterdam-centraal-ranked-7th-most-premium-train-station-world",
+        "https://www.iamexpat.nl/lifestyle/lifestyle-news/break-things-not-yourself-the-rage-room-now-open-amsterdam",
+        "https://www.iamexpat.nl/housing/property-news/what-could-your-rent-actually-buy-you",
+        "https://www.iamexpat.nl/expat-info/dutch-news/dutch-tax-partnerships-explained-income-gift-and-inheritance-tax",
+        "https://www.iamexpat.nl/career/employment-news/starting-business-netherlands-get-it-right-netherbridge-partners",
+        "https://www.iamexpat.nl/expat-info/dutch-news/why-some-things-cant-wait-timely-estate-planning-reduce-taxes",
+        "https://www.iamexpat.nl/lifestyle/lifestyle-news/5-remarkable-often-forgotten-dutch-female-painters",
+        "https://www.iamexpat.nl/expat-info/dutch-news/may-2026-8-things-expats-netherlands-need-know",
+        "https://www.iamexpat.nl/education/education-news/welcome-dutch-office-jungle-a-survival-guide-taalthuis",
+        "https://www.iamexpat.nl/housing/property-news/what-new-foundation-risk-score-means-your-mortgage",
+        "https://www.iamexpat.nl/expat-info/dutch-news/april-15-has-passed-what-means-americans-living-netherlands",
+        "https://www.iamexpat.nl/housing/property-news/create-trendy-and-affordable-new-bathroom-sanidirect",
+        "https://www.iamexpat.nl/lifestyle/lifestyle-news/the-gentle-feel-dutch-seasons",
+        "https://www.iamexpat.nl/education/education-news/increase-your-childs-possibilities-british-education",
+        "https://www.iamexpat.nl/lifestyle/lifestyle-news/achieve-your-fitness-goals-ultimate-performance-amsterdam",
+        "https://www.iamexpat.nl/expat-info/dutch-news/optimising-your-tax-position-fiscal-partners-netherlands",
+        "https://www.iamexpat.nl/education/education-news/how-and-why-dutch-talk-about-time",
+        "https://www.iamexpat.nl/expat-info/dutch-news/dutch-court-partners-voluntary-job-loss-doesnt-reduce-child-maintenance",
+        "https://www.iamexpat.nl/expat-info/dutch-news/filing-your-dutch-taxes-the-2026-guide",
+        "https://www.iamexpat.nl/education/education-news/how-childcare-helps-your-child-build-friendships-and-feel-home-new-country"
+      ],
+      "news_links": [
+        "https://www.iamexpat.nl/expat-info/dutch-news/new-statiegeld-campaign-offers-chance-win-cash-prizes",
+        "https://www.iamexpat.nl/housing/property-news/renters-use-more-income-dutch-housing-homeowners-gap-widens",
+        "https://www.iamexpat.nl/expat-info/dutch-news/dutch-petrol-prices-reach-new-record-high-oil-prices-soar",
+        "https://www.iamexpat.nl/expat-info/dutch-news/eu-introduce-stricter-rules-fireworks-after-appeal-netherlands",
+        "https://www.iamexpat.nl/expat-info/dutch-news/who-identifies-7-cases-hantavirus-dutch-cruise-ship"
+      ],
+      "project_links": [],
+      "other_links": [
+        "https://www.iamexpat.nl/career/jobs-netherlands/customer-service-positions/customer-service-desk-agent-temporary/rAw5PEiofL66oAQwfGrhKP",
+        "https://www.iamexpat.nl/career/jobs-netherlands/finance-accounting-positions/accounting-administrator-french-spanish/7w7edcs9tu5HkaFoweu2Hm",
+        "https://www.iamexpat.nl/career/jobs-netherlands/supply-chain-logistics-positions/allround-hands-support-flexpool/ikPTNcBBSsJUGGsghUeYjT",
+        "https://www.iamexpat.nl/career/jobs-netherlands/it-technology-positions/senior-ai-engineer/ubBrrYMS6H2Fn3YMA44hQb",
+        "https://www.iamexpat.nl/career/jobs-net"
+      ]
+    },
+    "pages": [],
+    "header": "\n",
+    "footer": "\n",
+    "header_login": {
+      "has_login": true,
+      "has_signup": true,
+      "has_subscribe": false,
+      "login_text": [
+        "Log in",
+        "Register"
+      ]
+    },
+    "paywall_summary": {
+      "is_public": true,
+      "confidence": "high",
+      "signals": [],
+      "reasoning": "The provided content is empty, but Iamexpat.nl is a public news and information portal that does not utilize a paywall for its general content.",
+      "wall_type": null,
+      "wall_confidence": null,
+      "wall_signals": [],
+      "wall_reasoning": ""
+    },
+    "legal": {
+      "has_terms": true,
+      "has_privacy": true,
+      "allows_scraping": false
+    }
+  },
+  {
+    "timestamp": "2026-05-10T08:11:06.054266+00:00",
+    "url": "https://www.mil.be/nl/",
+    "selectors": {
+      "header_selectors": [
+        "#vue_v_973672c4-0464-4f9a-a707-5a69dee9a7a8"
+      ],
+      "footer_selectors": [
+        "footer"
+      ],
+      "excluded_selectors": [
+        "#content",
+        "#TestNews"
+      ]
+    },
+    "footer_links": {
+      "privacy_links": "https://www.mil.be/nl/privacy/, /nl/cookies/",
+      "terms_links": "",
+      "disclaimer_links": ""
+    },
+    "content_links": {
+      "article_links": [],
+      "news_links": [
+        "https://www.mil.be/nl/news/3-para-draagt-bij-aan-de-versterking-van-de-veiligheid-in-west-afrika/",
+        "https://www.mil.be/nl/news/nieuwe-mijnenjagers-tewaterlating-van-de-m943-liege-en-first-steel-cut-van-de-m945-rochefort/",
+        "https://www.mil.be/nl/news/rsom-kamp-in-koksijde-versterkt-inzetcapaciteit/",
+        "https://www.mil.be/nl/news/de-landmacht-bouwt-een-geintegreerd-uas-ecosysteem-uit/"
+      ],
+      "project_links": [],
+      "other_links": [
+        "https://www.mil.be/nl/over-defensie/",
+        "https://www.mil.be/nl/onze-missies/",
+        "https://www.mil.be/nl/sluit-je-aan/"
+      ]
+    },
+    "pages": [],
+    "header": "[](/nl/ \"Defensie\")[Over Defensie](/nl/over-defensie/)[Onze missies](/nl/onze-missies/)[Sluit je aan](/nl/sluit-je-aan/)\nMenu\n[Zoeken](/nl/zoeken/ \"Zoeken\")\nNL\n[](https://careers.mil.be/nl/sites/Werken-bij-Defensie/my-profile/sign-in \"Login\")\n[](/nl/)\n[](/nl/zoeken/ \"Zoeken\")\nNL\n[](https://careers.mil.be/nl/sites/Werken-bij-Defensie/my-profile/sign-in \"Login\")\nSLUITEN\n[Over Defensie](/nl/over-defensie/)\n  * [Defensie](/nl/over-defensie/)\n  * [Landmacht](/nl/over-defensie/landmacht/)\n  * [Luchtmacht](/nl/over-defensie/luchtmacht/)\n  * [Marine](/nl/over-defensie/marine/)\n  * [Medische Dienst](/nl/over-defensie/medische-dienst/)\n  * [Cybermacht](/nl/over-defensie/cybermacht/)\n  * [Strategische Visie 2025](/nl/over-defensie/strategische-visie-defensie-2025/)\n\n[Onze missies](/nl/onze-missies/)\n  * [Waarom missies?](/nl/onze-missies/#waarom)\n  * [Missies in het buitenland](/nl/onze-missies/#buitenland)\n  * [Missies in België](/nl/onze-missies/#Belgi%C3%AB)\n  * [Afgelopen missies](/nl/onze-missies/#afgelopen)\n\n[Sluit je aan](/nl/sluit-je-aan/)\n  * [Jobs](/nl/sluit-je-aan/?tab=job)\n  * [Studies](/nl/sluit-je-aan/?tab=education)\n  * [Een eerste ervaring](/nl/sluit-je-aan/?tab=experience)\n  * [Infocentra](/nl/contacteer-ons/informatiecentra/)\n  * [Alle vacatures](https://careers.mil.be/nl/sites/Werken-bij-Defensie/jobs)\n\n[News](/nl/news/)[Agenda](/nl/agenda/)[Contact](/nl/contacteer-ons/)[Extra info & diensten](/nl/extra-info-diensten/)\n[Over Defensie](/nl/over-defensie/)\n  * [Defensie](/nl/over-defensie/)\n  * [Landmacht](/nl/over-defensie/landmacht/)\n  * [Luchtmacht](/nl/over-defensie/luchtmacht/)\n  * [Marine](/nl/over-defensie/marine/)\n  * [Medische Dienst](/nl/over-defensie/medische-dienst/)\n  * [Cybermacht](/nl/over-defensie/cybermacht/)\n  * [Strategische Visie 2025](/nl/over-defensie/strategische-visie-defensie-2025/)\n\n[Onze missies](/nl/onze-missies/)\n  * [Waarom missies?](/nl/onze-missies/#waarom)\n  * [Missies in het buitenland](/nl/onze-missies/#buitenland)\n  * [Missies in België](/nl/onze-missies/#Belgi%C3%AB)\n  * [Afgelopen missies](/nl/onze-missies/#afgelopen)\n\n[Sluit je aan](/nl/sluit-je-aan/)\n  * [Jobs](/nl/sluit-je-aan/?tab=job)\n  * [Studies](/nl/sluit-je-aan/?tab=education)\n  * [Een eerste ervaring](/nl/sluit-je-aan/?tab=experience)\n  * [Infocentra](/nl/contacteer-ons/informatiecentra/)\n  * [Alle vacatures](https://careers.mil.be/nl/sites/Werken-bij-Defensie/jobs)\n\n[News](/nl/news/)[Agenda](/nl/agenda/)[Contact](/nl/contacteer-ons/)[Extra info & diensten](/nl/extra-info-diensten/)\n",
+    "footer": "[ ](/nl/)\n© 2025, Ministerie van Defensie\nHeb je vragen? \n  * [ Veelgestelde vragen ](/nl/contacteer-ons/veelgestelde-vragen/)\n  * [ Agenda ](/nl/agenda/)\n  * [ Contact ](/nl/contacteer-ons/)\n\n\nVind ons op \n  * [ ](https://www.facebook.com/defence.be/)\n  * [ ](https://www.instagram.com/defensie.ladefense)\n  * [ ](https://www.youtube.com/belgiandefence)\n  * [ ](https://www.linkedin.com/company/belgian-defence/)\n  * [ ](https://x.com/belgiumdefence)\n\n\n© 2025, Ministerie van Defensie\n[ Privacy ](/nl/privacy/) • [ Cookies ](/nl/cookies/)\n",
+    "header_login": {
+      "has_login": true,
+      "has_signup": true,
+      "has_subscribe": false,
+      "login_text": [
+        "Login"
+      ]
+    },
+    "paywall_summary": {
+      "is_public": true,
+      "confidence": "high",
+      "signals": [],
+      "reasoning": "The page is the official website of the Belgian Ministry of Defence. It provides public information about the organization, missions, and recruitment. There are no paywall indicators, subscription prompts, or content restrictions.",
+      "wall_type": null,
+      "wall_confidence": null,
+      "wall_signals": [],
+      "wall_reasoning": ""
+    },
+    "legal": {
+      "has_terms": false,
+      "has_privacy": true,
+      "allows_scraping": true
+    }
+  }
+]
