@@ -153,7 +153,6 @@ class PageContent(BaseModel):
 
  
 # ── Pipeline state ────────────────────────────────────────────────────────────
- 
 class PipelineState(BaseModel):
     url: str = ""
     raw_html: str = ""
